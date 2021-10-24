@@ -1,1 +1,53 @@
-
+<div class="rectangle"></div>
+<div class="inr_circle"></div>
+<div class="circle"></div>
+<div class="out_circle"></div>
+<style>
+  body{
+    background: #6592CF;
+    margin: 50px;
+    position: relative;
+  }
+  .rectangle {
+    width: 75vw;
+    height: 50vh;
+    background: #243D83;
+    position: absolute;
+    top: 25px;
+    z-index: -1;
+  }
+  
+  .out_circle{
+    width: 250px;
+    height: 249px;
+    background:#6592CF;
+    border-radius: 50%;
+    position: absolute;
+    top: 99px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  .circle {
+    width: 150px;
+    height: 149px;
+    background:#243D83;
+    border-radius: 50%;
+    position: absolute;
+    top: 99px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9
+  }
+  .inr_circle {
+    width: 50px;
+    height: 49px;
+    background:#EEB850;
+    border-radius: 50%;
+    position: absolute;
+    top: 99px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99
+  }
+</style>
