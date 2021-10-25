@@ -1,1 +1,60 @@
+<div class="bottom"></div>
+<div class="middle"></div>
+<div class="top">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<style>
+  *{
+    background: #6592CF
+  }
+  .bottom {
+    width: 20px;
+    height: 55px;
+    background: #060F55;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%)
+}
+  .middle {
+    width: 140px;
+    height: 140px;
+    background:#060F55;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%)
+  }
+ 
+  .top{
+    width: 140px;
+    height: 10px;
+    position: absolute;
+    left:50%;
+    top: 50px;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  span{
+    width: calc(100% / 7);
+  }
+  
+  span:nth-child(odd){
+    height: 130px;
+    background:#060F55;
+    border-radius: 20px 20px 0 0;
+  }
+   span:nth-child(even){
+    height: 110px;
+    background:#6592CF;
+    border-radius: 0 0 20px 20px;
+  }
+</style>
 
